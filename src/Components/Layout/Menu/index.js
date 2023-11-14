@@ -1,11 +1,17 @@
 import React from 'react';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar } from 'react-bootstrap';
+
 const index = () => {
     return (
         <div>
-            Menu
+            <Navbar>
+                
+            </Navbar>
         </div>
     );
 };
 
 export default index;
+
