@@ -1,8 +1,10 @@
 import React from 'react';
 
+import "./Home.css";
+
 const index = () => {
     return (
-        <div>
+        <div className='body'>
             Home
         </div>
     );
