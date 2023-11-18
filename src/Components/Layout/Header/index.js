@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../../Images/Logo.png';
+import Logo from '../../../Assets/Images/Logo.png';
 import './Header.css';
 
 const Index = () => {
