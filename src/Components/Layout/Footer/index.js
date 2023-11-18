@@ -2,7 +2,7 @@ import React from 'react';
 
 import "./Footer.css";
 
-const index = () => {
+const Index = () => {
     return (
         <>
             <div className='w-100 d-flex justify-content-center'>
@@ -45,4 +45,4 @@ const index = () => {
     );
 };
 
-export default index;
+export default Index;
