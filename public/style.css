@@ -1,0 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;    
+}
+body{
+    background: rgba(200, 213, 216, 1) !important;
+}
