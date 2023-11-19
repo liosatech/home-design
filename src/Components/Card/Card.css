@@ -1,0 +1,50 @@
+.card{
+    background: none;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+.card .card-fram{ 
+    width: 60%;
+    height: 100%;
+    margin: 0px auto;
+    border: 1px solid rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.card .card-fram::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background: rgba(0, 0, 0, 1);
+    top: -7px;
+    right: -7px;
+}
+.card .card-fram::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background: rgba(0, 0, 0, 1);
+    bottom: -7px;
+    left: -7px;
+}
+.card .card-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .card-img img{
+    height: 85%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+.card .Card-text{
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+}

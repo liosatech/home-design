@@ -1,0 +1,15 @@
+.projects{
+    background: rgba(182, 199, 203, 1);
+    padding-top: 40px;
+}
+
+.projects .cards{
+    padding-bottom: 20px;
+}
+@media (max-width: 767px) {
+    .cards.d-flex.justify-content-center{
+        flex-direction: column; /* Change flex direction to column in mobile mode */
+        align-items: center; /* Center items in mobile mode */
+    }
+
+}
