@@ -9,8 +9,8 @@ const Index = () => {
                 <div className=' container row col-12 justify-content-center'>
                     <div className='col-12 col-md-6 Footer-text'>
                         <h3 className='mb-3'>Let`s work together</h3>
-                        <p className='mb-5'>Make your dream come true
-                        <br/> by Building your future home</p>
+                        <p className='mb-5'>Make your dream come true by
+                        <br/> Building your future home</p>
                         <button>get your free quote today</button>
                     </div>
                     <div className='col-12 col-md-6'>

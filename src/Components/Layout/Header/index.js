@@ -16,7 +16,6 @@ const Index = () => {
           </h3>
         </div>
         <div className='d-flex justify-content-center m-auto'>
-          {/* Removed w-100 from the img-box */}
           <div className='img-box'>
             <img src={Logo} alt='logo' />
           </div>
