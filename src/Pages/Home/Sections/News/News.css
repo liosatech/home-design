@@ -1,0 +1,52 @@
+.titles h2{
+    padding-top: 10px;
+    font-size: 35px;
+    font-weight: 800 !important;
+    color: rgba(0, 0, 0, 1);
+    text-align: start;
+}
+.titles span{
+    background: rgba(182, 199, 203, 1);
+    font-size: 35px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    padding: 10px 43px;
+    position: relative;
+}
+.titles a::after{
+    content: "";
+    width: 2000px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    right: 167px;
+    top: 84px;
+}
+.titles a::before{
+    content: "";
+    width: 2000px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 167px;
+    top: 84px;
+}
+.titles span::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    position: absolute;
+    left: -7px;
+    top: 20px;
+}
+.titles span::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    position: absolute;
+    right: -7px;
+    top: 20px;
+}

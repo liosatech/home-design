@@ -2,10 +2,59 @@
     background: rgba(182, 199, 203, 1);
     padding-top: 40px;
 }
+.porject-body h2{
+    color:rgba(0, 0, 0, 1);
+    font-size: 35px;
+    font-weight: 800;
+}
+.porject-body span{
+    background: rgba(200, 213, 216, 1);
+    color:rgba(0, 0, 0, 1);
+    font-size: 35px;
+    font-weight: 800;
+    padding: 10px 33px;
+    position: relative;
+}
+.porject-body span::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    top: 23px;
+    right: 5px;
+    position: absolute;
+}
+.porject-body span::before{
+    content: "";
+    width: 200px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    right: -194px;
+    top: 29px;
+}
+.porject-body a{
+    background: rgba(0, 126, 138, 1);
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 7px 35px;
+}
 
 .projects .cards{
     padding-bottom: 20px;
 }
+.pagination .slectbutton{ 
+    width: 25px;
+    height: 25px;
+    background: rgba(0, 126, 138, 1);
+}
+.pagination button{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+}
+
 @media (max-width: 767px) {
     .cards.d-flex.justify-content-center{
         flex-direction: column; /* Change flex direction to column in mobile mode */

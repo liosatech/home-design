@@ -9,26 +9,31 @@ const index = () => {
 
 
     return (
-        <div className='container-flude projects d-flex justify-content-center'>
-            <div className='row container'>
-                <div className='col-12 d-flex justify-content-between'>
-                    <div>
+        <div className='container-flude projects d-flex justify-content-center overflow-hidden'>
+            <div className='row container porject-body'>
+                <div className='col-12 d-flex justify-content-between align-content-end'>
+                    <div className='mt-'>
                         <a href="#">
                             More
                         </a>
                     </div>
                     <div>
                         <h2>
-                            Our Latest
-                            <br/>
-                            <span>project</span>
+                            Our Latest 
                         </h2>
+                        <span>project</span>
                     </div>
                 </div>
                 <div className='cards d-flex justify-content-center pt-5 '>
                     <Card  cardImg={CardImg} cardTitle="cardOne"/> 
                     <Card  cardImg={CardImg} cardTitle="cardOne"/>   
                     <Card  cardImg={CardImg} cardTitle="cardOne"/>     
+                </div>
+                <div className='d-flex justify-content-center align-items-center pagination pb-5'>
+                    <button className='slectbutton'></button>
+                    <button className='ms-4'></button>
+                    <button className='me-4 ms-4'></button>
+                    <button type="#"></button>
                 </div>
             </div>
         </div>
