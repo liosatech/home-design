@@ -1,10 +1,10 @@
-.img-box {
+.miniCard-img-box {
     width: 150px;
     height: 150px;
     position: relative;
     z-index: 1;
 }
-.img-box img{
+.miniCard-img-box img{
     width: 100%;
     object-fit: cover;
     border: 1px solid #fff;
@@ -34,8 +34,16 @@
 p{
     padding-left: 20px;
     width: 160px;
-    text-align: left;
     font-size: 12px;
     font-weight: 800;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+@media (max-width: 800px) {
+    .miniCard-img-box img {
+        width: 100px; /* Set the width to 100px when the screen width is under 800px */
+    }
 }

@@ -6,6 +6,7 @@ import "./Home.css";
 import Slider from './Sections/Slider';
 import Project from './Sections/Project';
 import News from './Sections/News';
+import AboutTeam from './Sections/AboutTeam';
 
 const index = () => {
     return (
@@ -13,6 +14,7 @@ const index = () => {
             <Slider />
             <Project />
             <News />
+            <AboutTeam />
         </div>
     );
 };

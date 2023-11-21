@@ -5,7 +5,7 @@ import "./MiniCard.css";
 const MiniCard = (props) => {
     return (
         <div className='d-flex justify-content-center align-content-start'>
-            <div className='img-box'>
+            <div className='miniCard-img-box'>
               <img src={props.MiniCardImg} alt={props.MiniCardtite} />
             </div>
             <div className='position-relative '>

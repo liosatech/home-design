@@ -1,0 +1,9 @@
+input{
+    background: rgba(182, 199, 203, 1);
+    padding: 5px 42px;
+    border: none;
+    margin-bottom: 10px;
+}
+input::placeholder{
+    color: #fff;
+}

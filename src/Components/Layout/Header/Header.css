@@ -28,14 +28,14 @@ header {
     font-size: 18px;
   }
   
-  header .img-box {
+  header .header-img-box {
     text-align: center;
     max-width: 100%;
     width: 400px;
     margin: 0 auto;
   }
   
-  header .img-box img {
+  header .header-img-box img {
     width: 100%;
     max-width: 250px;
     height: auto;
@@ -52,7 +52,7 @@ header {
       align-items: center;
     }
   
-    header .img-box {
+    header .header-img-box {
       width: 100%;
     }
   

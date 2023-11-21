@@ -16,7 +16,7 @@ const Index = () => {
           </h3>
         </div>
         <div className='d-flex justify-content-center m-auto'>
-          <div className='img-box'>
+          <div className='header-img-box'>
             <img src={Logo} alt='logo' />
           </div>
         </div>

@@ -6,7 +6,7 @@ import "./Slider.css";
 const index = () => {
     return (
         <div className='continer'>
-            <div className='img-box'>
+            <div className='slider-img-box'>
                 <img src={slider} alt="slider" />    
             </div>
         </div>

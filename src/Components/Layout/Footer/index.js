@@ -7,7 +7,7 @@ const Index = () => {
         <>
             <div className='w-100 d-flex justify-content-center'>
                 <div className=' container row col-12 justify-content-center'>
-                    <div className='col-12 col-md-6 Footer-text'>
+                    <div className='col-12 col-md-6 Footer-text mb-4 mb-md-0'>
                         <h3 className='mb-3'>Let`s work together</h3>
                         <p className='mb-5'>Make your dream come true by
                         <br/> Building your future home</p>

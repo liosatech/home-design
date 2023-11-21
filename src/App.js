@@ -3,8 +3,9 @@ import React from 'react';
 import Header from './Components/Layout/Header';
 import Menu from './Components/Layout/Menu';
 import Footer from './Components/Layout/Footer';
-import './Assets/Fonts/static/Mulish-Black.ttf';
+import SearchBox from './Components/Layout/Menu/SearchBox ';
 
+import './Assets/Fonts/static/Mulish-Black.ttf';
 import Home from './Pages/Home'
 
 
@@ -13,6 +14,7 @@ const App = () => {
         <div className='font-face-gm'>
            <Header/>
            <Menu/>
+           <SearchBox />
            <Home/>
            <Footer/>
         </div>
