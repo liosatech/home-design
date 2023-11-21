@@ -1,0 +1,41 @@
+.img-box {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    z-index: 1;
+}
+.img-box img{
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid #fff;
+    position: relative;
+    z-index: 10;
+}
+.black-box{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    position: absolute;
+    left: 20px;
+    top: 45px;
+    z-index: 9;
+}
+.black-box::after{
+    content: "";
+    width: 32px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    z-index: 9;
+}
+p{
+    padding-left: 20px;
+    width: 160px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 800;
+    z-index: 1;
+}

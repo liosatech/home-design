@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Mulish-Black";
+    src: local("Mulish-Black"),
+     url("./Assets/Fonts/static/Mulish-Black.ttf") format("truetype");
+   }
+.font-face-gm {
+    font-family: "Mulish-Black";
+}
+  

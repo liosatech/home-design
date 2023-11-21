@@ -2,14 +2,15 @@ import React from 'react';
 
 import Header from './Components/Layout/Header';
 import Menu from './Components/Layout/Menu';
-import Footer from './Components/Layout/Footer'
+import Footer from './Components/Layout/Footer';
+import './Assets/Fonts/static/Mulish-Black.ttf';
 
 import Home from './Pages/Home'
 
 
 const App = () => {
     return (
-        <div>
+        <div className='font-face-gm'>
            <Header/>
            <Menu/>
            <Home/>

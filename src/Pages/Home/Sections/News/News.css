@@ -50,3 +50,13 @@
     right: -7px;
     top: 20px;
 }
+.News-column h3{
+    background: rgba(182, 199, 203, 1);
+    color:rgba(0, 0, 0, 1);
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    padding: 5px 0px;
+    text-align: center;
+    width: 58%;
+}
