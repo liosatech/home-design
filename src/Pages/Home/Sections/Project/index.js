@@ -12,7 +12,7 @@ const index = () => {
         <div className='container-flude projects d-flex justify-content-center overflow-hidden'>
             <div className='row container porject-body'>
                 <div className='col-12 d-flex justify-content-between align-content-end'>
-                    <div className='mt-'>
+                    <div className='mt-4'>
                         <a href="#">
                             More
                         </a>
