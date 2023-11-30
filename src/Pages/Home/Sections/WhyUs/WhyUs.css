@@ -1,0 +1,63 @@
+.why_us {
+    margin: 70px 0px;
+}
+.why_us p{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: justify;
+    line-height: 3rem;
+}
+.why_us .WhyUs-textbox{
+    border: 1px solid rgb(0, 0, 0, 1);
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.why_us .WhyUs-textbox::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    position: absolute;
+    bottom: -7px;
+}
+.why_us .WhyUs-textbox::before{
+    content: "";
+    width: 350px;
+    height: 80px;
+    border-right: 1px solid rgb(0, 0, 0, 1);
+    border-bottom: 1px solid rgb(0, 0, 0, 1);
+    position: absolute;
+    bottom: -87px;
+    left: -47%;
+}
+.why_us .WhyUs-textbox h3{
+    font-size: 44px;
+    font-weight: 800;
+    color: rgba(42, 42, 42, 1);
+    margin: 25px 0px;
+}
+.why_us .WhyUs-textbox .color-header{
+    color: rgba(0, 126, 138, 1) !important;
+}
+@media (max-width: 767px) {
+    .why_us .WhyUs-textbox h3{
+        font-size: 28px;
+    }
+    .why_us p{
+        font-size: 15px;
+        margin-top: 50px;
+    }
+    .why_us .WhyUs-textbox{
+        height: 100%;
+    }
+    .why_us .WhyUs-textbox::before{
+        bottom: -50px;
+        left: -75%;
+        height: 50px;
+    }
+}
