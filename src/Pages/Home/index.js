@@ -8,10 +8,12 @@ import Project from './Sections/Project';
 import News from './Sections/News';
 import AboutTeam from './Sections/AboutTeam';
 import WhyUS from './Sections/WhyUs';
+import SearchBox from '../../Components/Layout/Menu/SearchBox ';
 
-const index = () => {
+const HomePage = () => {
     return (
         <div className='body'>
+            <SearchBox/>
             <Slider />
             <Project />
             <News />
@@ -21,4 +23,4 @@ const index = () => {
     );
 };
 
-export default index;
+export default HomePage;

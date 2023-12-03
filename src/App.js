@@ -1,5 +1,5 @@
 import React from 'react';
-
+import AppRoute from './services/App.route';
 import Header from './Components/Layout/Header';
 import Menu from './Components/Layout/Menu';
 import Footer from './Components/Layout/Footer';
@@ -12,14 +12,7 @@ import Home from './Pages/Home'
 
 const App = () => {
     return (
-        <div className='font-face-gm'>
-           <Header/>
-           <Menu/>
-           <SearchBox />
-           <Home/>
-            <SubscribeBox />
-           <Footer/>
-        </div>
+        <AppRoute/>
     );
 };
 
