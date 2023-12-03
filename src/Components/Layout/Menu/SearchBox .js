@@ -6,7 +6,6 @@ const SearchBox = () => {
 
   const inputHandler = (e) => {
     setInputText(e.target.value);
-    localStorage.setItem('Is_Logged_In', true)
   };
   console.log('page rerenderd');
 

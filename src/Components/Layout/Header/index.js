@@ -4,6 +4,11 @@ import Logo from '../../../Assets/Images/Logo.png';
 import './Header.css';
 
 const Index = () => {
+
+  const clickHandler = () => {
+    localStorage.setItem('Is_Logged_In', true)
+  }
+
   return (
     <header className='d-flex flex-row justify-content-center'>
       <div className='container d-flex flex-row justify-content-center align-items-start'>
@@ -21,7 +26,7 @@ const Index = () => {
           </div>
         </div>
         <div className='d-flex pt-4 justify-content-end w-100'>
-          <button className='me-3 LogIn-btn'>
+          <button onClick={clickHandler} className='me-3 LogIn-btn'>
             Login
           </button>
           <button className='signUp-btn'>

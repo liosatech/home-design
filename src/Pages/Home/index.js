@@ -8,12 +8,10 @@ import Project from './Sections/Project';
 import News from './Sections/News';
 import AboutTeam from './Sections/AboutTeam';
 import WhyUS from './Sections/WhyUs';
-import SearchBox from '../../Components/Layout/Menu/SearchBox ';
 
 const HomePage = () => {
     return (
         <div className='body'>
-            <SearchBox/>
             <Slider />
             <Project />
             <News />
