@@ -26,14 +26,14 @@ const Index = () => {
             onMouseEnter={() => hoverHandler(0)}
             onMouseLeave={() => leaveHandler(0)}
           >
-            <a href='#'>Home</a>
+            <a href='/'>Home</a>
           </li>
           <li
             className={enterStates[1] ? 'base-state hoverState' : 'base-state'}
             onMouseEnter={() => hoverHandler(1)}
             onMouseLeave={() => leaveHandler(1)}
           >
-            <a href='#'>Blog</a>
+            <a href='/blog'>Blog</a>
           </li>
           <li
             className={enterStates[2] ? 'base-state hoverState' : 'base-state'}
@@ -47,7 +47,7 @@ const Index = () => {
             onMouseEnter={() => hoverHandler(3)}
             onMouseLeave={() => leaveHandler(3)}
           >
-            <a href='#'>About Us</a>
+            <a href='/about'>About Us</a>
           </li>
         </ul>
       </div>
