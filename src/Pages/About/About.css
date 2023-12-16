@@ -1,0 +1,33 @@
+.About{
+    background: rgba(182, 199, 203, 1);
+}
+
+.aboutInfoTitel{
+    border-bottom: 1px solid black;
+    text-emphasis: left;
+}
+.aboutInfoTitel h3{
+    font-size: 35px;
+    font-weight: 800;
+}
+.aboutInfoTitel span{
+    font-size: 30px;
+    font-weight: 400;
+}
+.aboutInfoText{
+    text-align: justify;
+    padding-top: 5px;
+}
+.aboutInfoText p{
+    width: 95%;
+    font-size: 25px;
+    font-weight: 400;
+}
+.aboutInfoText span{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.aboutInfoText h4{
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}

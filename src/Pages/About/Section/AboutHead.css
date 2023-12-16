@@ -1,0 +1,23 @@
+.About-head{
+    background-color: #fff;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+.About-head::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+}
+.About-head::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    position: absolute;
+    left: -7px;
+    bottom: -7px;
+}
