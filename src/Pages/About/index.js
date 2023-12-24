@@ -8,7 +8,7 @@ const AboutPage = () => {
         <div className='d-flex justify-content-center flex-column'>
             <AboutHead />
             <div className='pt-3 mt-3 container-fluid About d-flex justify-content-center'>
-                <div className='continer'>
+                <div className=' container'>
                     <div className='row justify-content-center align-content-start'>
                         <div className='col-12  aboutInfoTitel'>
                             <h3>Home Design Group</h3>

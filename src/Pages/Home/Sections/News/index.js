@@ -18,7 +18,7 @@ import "./News.css";
 
 const index = () => {
     return (
-        <div className='row container-fluid overflow-hidden'>
+        <div className='row news container-fluid overflow-hidden'>
             <div className='col-12 titles d-flex justify-content-center'>
                 <a className=' position-relative' href="#">
                     <h2>Our Latest</h2>
@@ -29,8 +29,14 @@ const index = () => {
                 <div className='container pt-5'>
                     <div className='row'>
                         <div className='col-12 col-md-6 row'>
-                            <Card className='col-12'  cardImg={CardImg} cardTitle="cardOne"/> 
-                            <Card className='col-12'  cardImg={CardImg} cardTitle="cardOne"/> 
+                            <Card className='card col-12'  cardImg={CardImg} cardTitle="cardOne"/>
+                                <h4>
+                                "Courtyards: The Heart of Multi-Generational Houses in India    
+                                </h4> 
+                            <Card className='card col-12'  cardImg={CardImg} cardTitle="cardOne"/> 
+                                <h4>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </h4>
                         </div>
                         <div className='col-2'>
                             {/* EXtra div */}
@@ -68,7 +74,22 @@ const index = () => {
                                      MiniCardImg={PRODUCTSImgtree} MiniCardtite={"the-evolution"} />
                                 </div>
                             </div>
-                            
+                            <div className='row col-12 justify-content-center align-content-start'>
+                                <div className='col-12 News-column-titel PRODUCTS'>
+                                    <h3>ARCHITECTURE EVENTS</h3>
+                                </div>
+                                <div className='col-12 row'>
+                                    <MiniCard className='col-12' 
+                                    MiniCardText={"Courtyards: The Heart of Multi-Generational Houses in India"}
+                                     MiniCardImg={PRODUCTSImg} MiniCardtite={"False Ceiling"} />
+                                    <MiniCard className='col-12' 
+                                    MiniCardText={"Operations Within Apartments / Natura Futura Arquitectura"}
+                                     MiniCardImg={PRODUCTSImgtow} MiniCardtite={"operacion-entre-apartamentos"} />
+                                    <MiniCard className='col-12' 
+                                    MiniCardText={"The Evolution of Large-Scale Windows: Towards Unobstructed, Uninterrupted Views"}
+                                     MiniCardImg={PRODUCTSImgtree} MiniCardtite={"the-evolution"} />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
