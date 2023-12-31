@@ -1,16 +1,33 @@
-import React from 'react';
+import { useEffect, useState } from "react";
+
+// AIP
+import { GetUrl } from "../../../../Assets/Api/BaseApi";
 
 import slider from "../../../../Assets/Images/slider.png" ;
 import "./Slider.css";
 
-const index = () => {
+const Index = () => {
+
+    const [SliderImg , setSliderImg] = useState([]);
+
+    useEffect(() =>{
+        const fetchAPI = async () =>{
+            const data = await GetUrl();
+            console.log(data.slider);
+            setSliderImg(data.slider);
+        }
+        fetchAPI()
+    },[])
+
     return (
-        <div className='continer'>
-            <div className='slider-img-box'>
-                <img src={slider} alt="slider" />    
+        <>
+            <div className='continer'>
+                <div className='slider-img-box'>
+                    <img src={slider} alt="slider" />    
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 
-export default index;
+export default Index;
