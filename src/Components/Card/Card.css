@@ -38,6 +38,8 @@
     align-items: center;
 }
 .card .card-img img{
+    max-width: 200%;
+    max-height: 195%;
     height: 85%;
     object-fit: cover;
     border: 2px solid #fff;

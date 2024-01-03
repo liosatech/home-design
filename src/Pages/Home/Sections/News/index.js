@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect, useState } from "react";
 import Card from "../../../../Components/Card/Card";
 import MiniCard from '../../../../Components/Card/MiniCard';
 
@@ -11,12 +11,24 @@ import PRODUCTSImg from "../../../../Assets/Images/News/False Ceiling Designs _ 
 import PRODUCTSImgtow from "../../../../Assets/Images/News/home-decor_200_pexels 1.png";
 import PRODUCTSImgtree from "../../../../Assets/Images/News/3d-home-wallpaper-500x500 1.png";
 
-
+// IPS
+import { GetUrl } from "../../../../Assets/Api/BaseApi";
 
 import "./News.css";
 
 
-const index = () => {
+const Index = () => {
+    const [porductImg , setporductImg] = useState([]);
+
+    useEffect(() =>{
+        const fetchAPI = async () =>{
+            const data = await GetUrl();
+            console.log(data);
+            setporductImg(data.product);
+        }
+        fetchAPI()
+    },[])
+
     return (
         <div className='row news container-fluid overflow-hidden'>
             <div className='col-12 titles d-flex justify-content-center'>
@@ -63,16 +75,17 @@ const index = () => {
                                     <h3>MOST PRODUCTS</h3>
                                 </div>
                                 <div className='col-12 row'>
-                                    <MiniCard className='col-12' 
-                                    MiniCardText={"Courtyards: The Heart of Multi-Generational Houses in India"}
-                                     MiniCardImg={PRODUCTSImg} MiniCardtite={"False Ceiling"} />
-                                    <MiniCard className='col-12' 
-                                    MiniCardText={"Operations Within Apartments / Natura Futura Arquitectura"}
-                                     MiniCardImg={PRODUCTSImgtow} MiniCardtite={"operacion-entre-apartamentos"} />
-                                    <MiniCard className='col-12' 
-                                    MiniCardText={"The Evolution of Large-Scale Windows: Towards Unobstructed, Uninterrupted Views"}
-                                     MiniCardImg={PRODUCTSImgtree} MiniCardtite={"the-evolution"} />
-                                </div>
+                                    {porductImg.map((porductImg) =>{
+
+                                        return(
+                                            <>
+                                                <MiniCard className='col-12'
+                                                MiniCardText={"Courtyards: The Heart of Multi-Generational Houses in India"}
+                                                MiniCardImg={porductImg.pic} MiniCardtite={porductImg.title} />
+                                            </>
+                                            );
+                                    })}
+                                    </div>
                             </div>
                             <div className='row col-12 justify-content-center align-content-start'>
                                 <div className='col-12 News-column-titel PRODUCTS'>
@@ -98,4 +111,4 @@ const index = () => {
     );
 };
 
-export default index;
+export default Index;

@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 // AIP
 import { GetUrl } from "../../../../Assets/Api/BaseApi";
 
-import slider from "../../../../Assets/Images/slider.png" ;
 import "./Slider.css";
 
 const Index = () => {
@@ -13,7 +12,7 @@ const Index = () => {
     useEffect(() =>{
         const fetchAPI = async () =>{
             const data = await GetUrl();
-            console.log(data.slider);
+            console.log(data);
             setSliderImg(data.slider);
         }
         fetchAPI()
@@ -23,7 +22,11 @@ const Index = () => {
         <>
             <div className='continer'>
                 <div className='slider-img-box'>
-                    <img src={slider} alt="slider" />    
+                { SliderImg.map((SliderImg) => {
+                 console.log(SliderImg)
+                 return(
+                 <img key={SliderImg.ID} src={SliderImg.pic} alt={SliderImg.title} />);
+                 })}    
                 </div>
             </div>
         </>
